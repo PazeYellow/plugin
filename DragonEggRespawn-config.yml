@@ -1,0 +1,27 @@
+# Chance for an egg on every dragon kill AFTER the first kill in that End world.
+# Use a decimal from 0 to 1. Examples: 1 = 100%, 0.25 = 25%, 0.01 = 1%.
+drop-chance: 0.10
+
+broadcast:
+  enabled: true
+  # Available placeholders: {world}, {chance}
+  # Use & followed by a Minecraft colour code, such as &5 or &d.
+  message: "&5A Dragon Egg has spawned in &d{world}&5!"
+
+discord:
+  enabled: false
+
+  # In Discord: Server Settings -> Integrations -> Webhooks -> New Webhook,
+  # select the destination channel, then copy its webhook URL here.
+  webhook-url: ""
+
+  # Enable Discord Developer Mode, right-click the SAME channel, and copy its ID.
+  # The plugin checks this against the webhook so messages cannot silently go to
+  # the wrong configured channel.
+  channel-id: ""
+
+  username: "Dragon Egg Respawn"
+  avatar-url: ""
+
+  # Available placeholders: {world}, {chance}
+  message: "A Dragon Egg has spawned in **{world}**!"
